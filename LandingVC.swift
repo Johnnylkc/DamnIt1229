@@ -55,7 +55,7 @@ class LandingVC: UIViewController {
                 
                 //// 新建一個事件
                 let event: EKEvent = EKEvent (eventStore: eventStore)
-                event.title = "新增一個測試事件"
+                event.title = "新增一個測試事件333"
                 event.startDate = NSDate (timeInterval: 5 * 60, sinceDate: NSDate())
                 event.endDate = NSDate (timeInterval: 20*60, sinceDate: NSDate())
                 event.notes = "這個是備註"
@@ -63,7 +63,14 @@ class LandingVC: UIViewController {
                 
                 event.timeZone = NSTimeZone(abbreviation: "Asia/Taipei");
 
-                event.addAlarm(EKAlarm(relativeOffset: -300))
+                event.addAlarm(EKAlarm(relativeOffset: -60))
+                
+                               
+                event.location = "worod gym 三重店"
+                
+                
+                
+                event.URL = NSURL(string: "www.google.com")
                 
                 
                 do{
