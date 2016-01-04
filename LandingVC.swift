@@ -46,7 +46,6 @@ class LandingVC: UIViewController {
     func addClass(sender:UIButton)
     {
         let eventStore: EKEventStore = EKEventStore ()
-        
         eventStore.requestAccessToEntityType(.Event , completion: { granted, error in
        
             if (granted) && (error == nil ) {
@@ -65,11 +64,7 @@ class LandingVC: UIViewController {
 
                 event.addAlarm(EKAlarm(relativeOffset: -60))
                 
-                               
-                event.location = "worod gym 三重店"
-                
-                
-                
+                event.location = "world gym 三重店"
                 event.URL = NSURL(string: "www.google.com")
                 
                 
@@ -80,8 +75,7 @@ class LandingVC: UIViewController {
                 
                 print("okok")
                 
-                
-            }
+                }
             
         })
        
